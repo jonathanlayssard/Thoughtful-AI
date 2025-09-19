@@ -1,0 +1,19 @@
+Automation Factory
+
+This script classifies packages into STANDARD, SPECIAL, or REJECTED if the size and weight are to much.
+
+Here are the rules given:
+- Bulky if package volume is greater than 1,000,000 or if any dimension is over 150 i.e (width, height, length)
+- Heavy if package mass is greater than 20
+
+REJECTED if bulky and heavy
+SPECIAL if bulky or heavy
+STANDARD if no criteria is met
+
+Example outputs
+STANDARD
+SPECIAL
+SPECIAL
+REJECTED
+
+Run script with python automation_factory.py
